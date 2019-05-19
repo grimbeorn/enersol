@@ -70,10 +70,9 @@
       </div>
     </section>
     <!-- Section 3 -->
-    <section class="section background-dark">
+    <!-- <section class="section background-dark">
       <div class="s-12 m-12 l-4 center">
         <h3 class="text-size-30 margin-bottom-40 text-center">Formulario de Contacto</h3>
-
         <form class="customform text-white needs-validation" method="post" action="{{ url('/contact2') }}" novalidate>
           {{ csrf_field() }}
           <div class="line">
@@ -96,7 +95,32 @@
           </div>  
           <button class="button border-radius text-white background-primary">Enviar</button>
         </form>
-        
+      </div>           
+    </section> -->
+    <section class="section background-dark">
+      <div class="s-12 m-12 l-4 center">
+        <h3 class="text-size-30 margin-bottom-40 text-center"><b>Formulario de Contacto</b></h3>
+        <form class="customform text-white" method="post" enctype="multipart/form-data">
+          <div class="line">
+            <div class="margin">
+              <div class="s-12 m-12 l-6">
+                <input name="email" class="required email" placeholder="Correo electrónico" title="Your e-mail" type="text" />
+              </div>
+              <div class="s-12 m-12 l-6">
+                <input name="subject" class="required subject" placeholder="Teléfono" title="Subject" type="text" />
+              </div>
+            </div>
+          </div>                       
+          <div class="line">       
+            <div class="s-12">
+              <input name="name" class="required name" placeholder="Nombre" title="Your name" type="text" />
+            </div>
+            <div class="s-12">
+              <textarea name="message" class="required message" placeholder="Mensaje" rows="4"></textarea>
+            </div>
+            <div class="s-12"><button class="button border-radius text-white background-primary" type="submit">Enviar</button></div>
+          </div>    
+        </form>
       </div>           
     </section>
   </article>
