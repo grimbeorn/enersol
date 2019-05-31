@@ -6,11 +6,11 @@
 
   <article>    
     <!-- Header -->
-    <header class="section background-image text-center" style="background-image:url(img/adobe/cuantoCuesta.jpeg)">
+    <header class="section background-image text-center" style="background-image:url(img/adobe/cuantoCuesta_002.jpeg)">
       <h1 class="animated-element slow text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
         cuánto cuesta
       </h1>
-      <p class="animated-element text-white">Duis autem vel eum iriure dolor in hendrerit in</p>
+      <p class="animated-element text-white">expertos en ahorros energéticos</p>
       <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
     </header>
     <!-- Section 1 -->
@@ -21,6 +21,30 @@
         <h2 class="text-dark text-size-50 text-m-size-40">Cuánto <b class="text-primary">Cuesta ?</b></h2>
       </div>                                                                                                    
     </section>
+
+    <a href="mensajeEnviar" id="mensajeEnviar">
+      <div class="margin2x">
+      @if (session('notification'))
+        <div class="padding text-left" style="background-color:#F0FFF0">
+          <!-- <div class="alert alert-success"> -->
+          <ul>
+            <li style="color:#008000">{{ session('notification') }}</li>
+          </ul>
+        </div>
+      @endif
+      @if ($errors->any())
+        <div class="padding text-left" style="background-color:#FFE4E1">
+        <!-- <div class="alert alert-danger"> -->
+          <ul>
+            @foreach ($errors->all() as $error)
+              <li style="color:#8B0000">{{ $error }}</li>
+            @endforeach
+          </ul>
+        </div>
+      @endif
+      </div>
+    </a>
+
     <!-- Section 2 -->
     <section class="full-width background-grey">
       <div class="m-12 l-6">
@@ -61,25 +85,32 @@
         <br><br>
         <br>
         <h3 class="text-size-30 margin-bottom-40 text-center"><b>Envíanos tu Información</b></h3>
-        <form class="customform text-white" method="post" enctype="multipart/form-data">
+        <form class="customform text-black" method="post" enctype="multipart/form-data" action="{{ url('/data') }}">
+          {{ csrf_field() }}
           <div class="line">
             <div class="margin">
               <div class="s-12 m-12 l-6">
-                <input name="email" class="required email" placeholder="Your e-mail" title="Your e-mail" type="text" />
+                <input name="correo" class="required email" placeholder="Correo electrónico *" title="Your e-mail" type="text" value="{{ old('correo') }}"/>
               </div>
               <div class="s-12 m-12 l-6">
-                <input name="name" class="name" placeholder="Your name" title="Your name" type="text" />
+                <input name="telefono" class="required subject" placeholder="Teléfono *" title="Subject" type="text" value="{{ old('telefono') }}"/>
               </div>
             </div>
-          </div>                         
+          </div>                       
           <div class="line">       
             <div class="s-12">
-              <input name="subject" class="required subject" placeholder="Subject" title="Subject" type="text" />
+              <input name="nombre" class="required name" placeholder="Nombre *" title="Your name" type="text" value="{{ old('nombre') }}"/>
             </div>
             <div class="s-12">
-              <textarea name="message" class="required message" placeholder="Your message" rows="3"></textarea>
+              <textarea name="mensaje" class="required message" placeholder="Mensaje *" rows="4">{{ old('mensaje') }}</textarea>
             </div>
-            <div class="s-12"><button class="button border-radius text-white" type="submit">Submit Button</button></div>
+
+            <div class="s-12">
+              <input name="adjuntar" class="required" type="file" id="adjuntar" style="color:#808080">
+            </div>
+
+            <div class="s-12"><button class="button border-radius text-white" type="submit" style="background-color:green">Enviar</button>
+            </div>
           </div>    
         </form>
       </div>

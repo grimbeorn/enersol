@@ -3,8 +3,9 @@
 @section('content')
 <main role="main"> 
 	<!-- Header -->
-	<header class="section background-image text-center" style="background-image:url(img/adobe/enersol.jpeg)">
+	<header class="section background-image text-center" style="background-image:url(img/adobe/enersol_002.jpeg)">
 	  <h1 class="animated-element slow text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
+	    <!-- <b>ENERSOL</b> -->
 	    ENERSOL
 	  </h1>
 	  <p class="animated-element text-white">expertos en instalaciones fotovoltáicas</p>
@@ -23,13 +24,15 @@
 	        <img src="img/adobe/instalacion_001.jpeg" alt="">
 	      </div>          
 	      <div class="m-12 l-6">
-	        <h3 class="animated-element text-strong text-size-20 text-line-height-1 margin-bottom-20">Qué hacemos por ti ?</h3>
+	        <h3 class="animated-element text-strong text-size-20 text-line-height-1 margin-bottom-20">En Enersol :</h3>
 	        <p class="animated-element slow margin-bottom-30">
-	          - Enersol ofrecemos experiencia de más de 10 años en el sector.<br>
-	          - Enersol aunamos experiencia, versatilidad, capacidad y compromiso.<br>
-	          - Enersol consideramos siempre el costo de nuestras propuestas de forma que la solución, además de ser óptima, sea económicamente rentable y ejecutable.<br>
-	          - Enersol aportamos racionalidad al diseño, considerando los tiempos de traslado y montaje del sistema.<br>
-	          - Enersol queremos satisfacer los estándares de calidad de nuestros clientes, adaptándonos a las sigularidades de cada proyecto.
+	        	<ul>
+		        	<li>ofrecemos experiencia de más de 10 años en el sector.</li>
+		        	<li>aunamos experiencia, versatilidad, capacidad y compromiso.</li>
+		        	<li>consideramos siempre el costo de nuestras propuestas de forma que la solución, además de ser óptima, sea económicamente rentable y ejecutable.</li>
+		        	<li>aportamos racionalidad al diseño, considerando los tiempos de traslado y montaje del sistema.</li>
+		        	<li>queremos satisfacer los estándares de calidad de nuestros clientes, adaptándonos a las sigularidades de cada proyecto.</li>
+	        	</ul>
 	        </p>
 	      </div>
 	    </div>    

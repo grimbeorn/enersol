@@ -3,11 +3,11 @@
 @section('content')
 <main role="main"> 
 	<!-- MAIN -->
-  <header class="section background-image text-center" style="background-image:url(img/adobe/residencial_001.jpeg)">
+  <header class="section background-image text-center" style="background-image:url(img/adobe/residencial_003.jpeg)">
     <h1 class="animated-element slow text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
       fotovoltáico residencial
     </h1>
-    <p class="animated-element text-white">Duis autem vel eum iriure dolor in hendrerit in</p>
+    <p class="animated-element text-white">expertos en instalaciones residenciales</p>
     <!-- white full width arrow object -->
     <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
   </header>

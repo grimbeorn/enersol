@@ -4,13 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enersol | Paneles Solares Mexico</title>
+    <title>Enersol | Instalaciones Fotovoltáicas</title>
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsee.css">
-    <!-- <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-    <link rel="stylesheet" href="css/lightcase.css"> -->
+    <link rel="stylesheet" href="css/lightcase.css">
     <!-- CUSTOM STYLE -->      
     <link rel="stylesheet" href="css/template-style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" rel="stylesheet"> 
@@ -59,7 +59,7 @@
           <!-- right menu items -->
           <div class="top-nav right-menu">
              <ul class="top-ul chevron">
-                <li><a href="{{ url('/cuanto') }}">Cuánto Cuesta</a></li>
+                <li><a href="{{ url('/cuanto') }}">Ahorro</a></li>
                 <li><a href="{{ url('/contacto') }}">Contacto</a></li>
              </ul> 
           <!-- <div style="float: right"><p style="padding-right: 10px" color:"white">texto</p></div> -->
@@ -96,8 +96,8 @@
             <div class="s-12 m-6 l-3 xl-3">
                <h4 class="text-white text-strong margin-m-top-30">Contacto CDMX</h4>
                 <p><i class="icon-sli-screen-smartphone text-primary"></i> 55 8421 4610</p>
-                <a class="text-primary-hover" href="mailto:contact@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> contacto@enersol.mx</a><br>
-                <a class="text-primary-hover" href="mailto:office@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> office@enersol.mx</a>
+                <a class="text-primary-hover" href="mailto:contacto@enersol.mx"><i class="icon-sli-mouse text-primary"></i> contacto@enersol.mx</a><br>
+                <a class="text-primary-hover" href="mailto:proyectos@enersol.mx"><i class="icon-sli-mouse text-primary"></i> proyectos@enersol.mx</a>
             </div>
           </div>  
         </div>    
@@ -121,7 +121,7 @@
       </section>
     </footer>
     <script type="text/javascript" src="js/responsee.js"></script>
-    <!-- <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script> -->
-    <!-- <script type="text/javascript" src="js/template-scripts.js"></script>  -->
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
   </body>
 </html>
