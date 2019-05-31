@@ -35,7 +35,7 @@ class contactController extends Controller
         Mail::to('hernandomtz@gmail.com')->send(new NewContact($nombre, $correo, $telefono, $mensaje));
 
         $notification = 'gracias por su mensaje, nos contactaremos con usted en menos de 24 horas!';
-        // return back()->with(compact('notification'));
+        return back()->with(compact('notification'));
     }
 
 }
