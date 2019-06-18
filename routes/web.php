@@ -15,16 +15,16 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/energiasResidencial', function () {
-    return view('energiasResidencial');
+Route::get('/residencial', function () {
+    return view('residencial');
 });
 
-Route::get('/energiasIndustrial', function () {
-    return view('energiasIndustrial');
+Route::get('/industrial', function () {
+    return view('industrial');
 });
 
-Route::get('/cuanto', function () {
-    return view('cuanto');
+Route::get('/ahorro', function () {
+    return view('ahorro');
 });
 
 Route::get('/contacto', function () {

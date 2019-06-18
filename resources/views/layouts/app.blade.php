@@ -4,7 +4,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enersol | Instalaciones Fotovoltáicas</title>
+    <title>Sonnen | Instalaciones Fotovoltáicas</title>
+    <!-- <link rel="shortcut icon" type="image/png" href="{{ asset('favicon.png') }}"> -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsee.css">
@@ -37,12 +39,12 @@
           <!-- left menu items -->
           <div class="top-nav left-menu">
              <ul class="right top-ul chevron">
-                <li><a href="{{ url('/') }}">Enersol</a></li>
+                <li><a href="{{ url('/') }}">Sonnen</a></li>
                 <li> 
                   <a>Energías Renovables</a>
                   <ul>
-                    <li><a href="{{ url('/energiasResidencial') }}">Fotovoltáico Residencial</a></li>
-                    <li><a href="{{ url('/energiasIndustrial') }}">Fotovoltáico Industrial</a></li>
+                    <li><a href="{{ url('/residencial') }}">Fotovoltáico Residencial</a></li>
+                    <li><a href="{{ url('/industrial') }}">Fotovoltáico Industrial</a></li>
                   </ul>
                 </li>
              </ul>
@@ -59,7 +61,7 @@
           <!-- right menu items -->
           <div class="top-nav right-menu">
              <ul class="top-ul chevron">
-                <li><a href="{{ url('/cuanto') }}">Ahorro</a></li>
+                <li><a href="{{ url('/ahorro') }}">Ahorro</a></li>
                 <li><a href="{{ url('/contacto') }}">Contacto</a></li>
              </ul> 
           <!-- <div style="float: right"><p style="padding-right: 10px" color:"white">texto</p></div> -->
@@ -87,7 +89,7 @@
             </div>
             <div class="s-12 m-6 l-3 xl-2">
                <h4 class="text-white text-strong margin-m-top-30">Links</h4>      
-               <a class="text-primary-hover" href="contacto.html">Contact Us</a><br>
+               <a class="text-primary-hover" href="{{ url('/contacto') }}">Contact Us</a><br>
             </div>
             <div class="s-12 m-6 l-3 xl-2">
                <h4 class="text-white text-strong margin-m-top-30">Términos de Uso</h4>
@@ -96,8 +98,8 @@
             <div class="s-12 m-6 l-3 xl-3">
                <h4 class="text-white text-strong margin-m-top-30">Contacto CDMX</h4>
                 <p><i class="icon-sli-screen-smartphone text-primary"></i> 55 8421 4610</p>
-                <a class="text-primary-hover" href="mailto:contacto@enersol.mx"><i class="icon-sli-mouse text-primary"></i> contacto@enersol.mx</a><br>
-                <a class="text-primary-hover" href="mailto:proyectos@enersol.mx"><i class="icon-sli-mouse text-primary"></i> proyectos@enersol.mx</a>
+                <a class="text-primary-hover" href="mailto:contacto@sonnen.mx"><i class="icon-sli-mouse text-primary"></i> contacto@sonenn.mx</a><br>
+                <a class="text-primary-hover" href="mailto:proyectos@sonnen.mx"><i class="icon-sli-mouse text-primary"></i> proyectos@sonenn.mx</a>
             </div>
           </div>  
         </div>    

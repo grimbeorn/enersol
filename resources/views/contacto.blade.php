@@ -5,11 +5,12 @@
 <main role="main">
   <article>    
     <!-- Header -->
-    <header class="section background-image text-center" style="background-image:url(img/adobe/contacto_003.jpeg)">
+    <!-- <header class="section background-image text-center" style="background-image:url(img/original/contacto.jpeg)"> -->
+    <header class="section background-image text-center" style="background-image:url(img/reducido/contacto02.jpg)">
       <h1 class="animated-element slow text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
-        contacto
+        CONTACTO
       </h1>
-      <p class="animated-element text-white">queremos saber de ti</p>
+      <p class="animated-element text-white">Queremos Escucharte</p>
       <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
     </header>
     <!-- Section 1 -->
@@ -40,8 +41,8 @@
               </div>
               <div class="margin-left-60">
                 <h2 class="text-size-20 margin-bottom-10 text-strong">E-mail</h2>                
-                <p><a class="text-primary-hover" href="mailto:contact@sampledomain.com">contacto@enersol.mx</a></p>
-                <p><a class="text-primary-hover" href="mailto:office@sampledomain.com">proyectos@enersol.mx</a></p>               
+                <p><a class="text-primary-hover" href="mailto:contact@sonnen.com">contacto@sonnen.mx</a></p>
+                <p><a class="text-primary-hover" href="mailto:office@sonnen.com">proyectos@sonnen.mx</a></p>               
               </div>
             </div>
             <div class="l-12 xl-6 margin-bottom-60">
